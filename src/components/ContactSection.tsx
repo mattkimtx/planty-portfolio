@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, FormEvent } from 'react';
 import emailjs from 'emailjs-com';
 import { Sprout, Mail, Github, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,19 +8,31 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
 
 const ContactSection = () => {
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
 
-  const handleSubmit = (e) => {
+  // Initialize EmailJS once when component mounts
+  useEffect(() => {
+    // Initialize with your public key
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '');
+  }, []);
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!form.current) return;
 
+    // Show loading toast
+    toast({
+      title: "Sending message...",
+      description: "Please wait while your message is being sent.",
+    });
+    
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
         form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ''
       )
       .then(
         (result) => {
@@ -87,7 +99,7 @@ const ContactSection = () => {
                   </label>
                   <Textarea
                     id="message"
-                    name="message"
+                    name="user_message"
                     placeholder="Your message here..."
                     rows={5}
                     required
