@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { LeafyGreen, Download } from 'lucide-react';
+import { LeafyGreen, Download, Fish } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -13,6 +13,9 @@ const HeroSection = () => {
       <div className="absolute -z-10 bottom-20 left-10 opacity-10">
         <LeafyGreen size={120} className="text-plant-400 rotate-45" />
       </div>
+      <div className="absolute -z-10 top-40 left-20 opacity-10 animate-[leaf-sway_8s_ease-in-out_infinite]">
+        <Fish size={100} className="text-plant-400" />
+      </div>
       
       <div className="container mx-auto px-4 py-20 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -21,7 +24,7 @@ const HeroSection = () => {
               Hello, I'm <span className="text-plant-500">Your Name</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6">
-              Software Engineer & Plant Enthusiast
+              Software Engineer & Outdoor Enthusiast
             </p>
             <p className="text-lg mb-8 max-w-lg">
               I build beautiful, responsive, and user-friendly applications with a focus on clean code and sustainable practices.

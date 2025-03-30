@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { LeafyGreen } from 'lucide-react';
+import { LeafyGreen, Fish } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,6 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <LeafyGreen className="h-5 w-5 text-plant-500" />
+            <Fish className="h-5 w-5 text-plant-400" />
             <span className="font-display text-lg">Your Name</span>
           </div>
           

@@ -100,4 +100,20 @@
   .leaf-icon {
     @apply text-plant-500 animate-leaf-sway;
   }
+
+  .fishing-wave {
+    @apply absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-r from-plant-100 via-plant-200 to-plant-100 opacity-30;
+    animation: wave 8s ease-in-out infinite;
+    mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z' opacity='.25'/%3E%3C/svg%3E");
+    mask-size: cover;
+  }
+
+  @keyframes wave {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(2%);
+    }
+  }
 }

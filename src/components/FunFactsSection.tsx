@@ -1,9 +1,14 @@
 
 import React from 'react';
-import { Leaf, Trees, Coffee, BookOpen, Plane, Music } from 'lucide-react';
+import { Leaf, Trees, Coffee, BookOpen, Plane, Music, Fish, LocateFixed } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const funFacts = [
+  {
+    icon: <Fish className="leaf-icon" size={24} />,
+    title: "Fly Fishing Enthusiast",
+    description: "I spend weekends fly fishing in New England's beautiful rivers. My favorite spots include the Farmington and Deerfield Rivers."
+  },
   {
     icon: <Leaf className="leaf-icon" size={24} />,
     title: "Plant Parent",
@@ -20,19 +25,14 @@ const funFacts = [
     description: "I read 30+ books per year. My favorite genres include science fiction, popular science, and biographies."
   },
   {
-    icon: <Plane className="leaf-icon" size={24} />,
-    title: "World Traveler",
-    description: "I've visited 18 countries across 4 continents. My favorite destination so far has been Japan."
+    icon: <LocateFixed className="leaf-icon" size={24} />,
+    title: "Nature Explorer",
+    description: "I map out and document New England's hidden fishing spots and trails, combining my love for technology and the outdoors."
   },
   {
     icon: <Trees className="leaf-icon" size={24} />,
     title: "Trail Runner",
     description: "I run on forest trails three times a week and have completed two half-marathons."
-  },
-  {
-    icon: <Music className="leaf-icon" size={24} />,
-    title: "Amateur Musician",
-    description: "I play the guitar and ukulele. I'm currently learning how to produce electronic music."
   },
 ];
 
