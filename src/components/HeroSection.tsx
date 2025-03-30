@@ -2,6 +2,7 @@
 import React from 'react';
 import { LeafyGreen, Download, Fish } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection = () => {
   return (
@@ -40,11 +41,12 @@ const HeroSection = () => {
           </div>
           
           <div className="order-1 md:order-2 flex justify-center animate-fade-in-up">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-plant-100 to-plant-200 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              {/* Replace with your image */}
-              <div className="absolute inset-0 flex items-center justify-center text-plant-500 font-medium text-lg">
-                Matthew's Photo Here
-              </div>
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <img 
+                src="/lovable-uploads/2fd2c1a1-d2b4-4ee3-bb85-91a1809c24c8.png" 
+                alt="Matthew Kim fishing" 
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
         </div>

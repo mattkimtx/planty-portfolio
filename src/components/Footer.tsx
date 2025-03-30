@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { LeafyGreen, Fish } from 'lucide-react';
+import { LeafyGreen, Fish, Smartphone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,6 +13,15 @@ const Footer = () => {
             <LeafyGreen className="h-5 w-5 text-plant-500" />
             <Fish className="h-5 w-5 text-plant-400" />
             <span className="font-display text-lg">Matthew Kim</span>
+            <a 
+              href="https://apps.apple.com/us/app/fishy-fishy-sticker-app/id6743358124?uo=2" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="ml-2 text-xs text-plant-500 hover:text-plant-600 flex items-center"
+            >
+              <Smartphone className="h-3 w-3 mr-1" />
+              Fishy Fishy App
+            </a>
           </div>
           
           <div className="text-sm text-muted-foreground">
