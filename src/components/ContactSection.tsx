@@ -111,9 +111,11 @@ const ContactSection = () => {
             
             <div>
               <h3 className="text-2xl font-display font-medium mb-4">Resume</h3>
-              <Button variant="outline" className="border-plant-200 hover:bg-plant-50">
-                Download Resume
-              </Button>
+              <a href="/Resume.pdf" download>
+                <Button variant="outline" className="border-plant-200 hover:bg-plant-50">
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </div>
         </div>

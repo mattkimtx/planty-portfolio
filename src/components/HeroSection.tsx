@@ -34,9 +34,11 @@ const HeroSection = () => {
               <Button className="bg-plant-500 hover:bg-plant-600">
                 Contact Me
               </Button>
-              <Button variant="outline" className="border-plant-200 hover:bg-plant-50">
-                <Download className="mr-2 h-4 w-4" /> Download Resume
-              </Button>
+              <a href="/Resume.pdf" download>
+                <Button variant="outline" className="border-plant-200 hover:bg-plant-50">
+                  <Download className="mr-2 h-4 w-4" /> Download Resume
+                </Button>
+              </a>
             </div>
           </div>
           
