@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				plant: {
+					50: '#f2fcf1',
+					100: '#e0f7de',
+					200: '#c0edc0',
+					300: '#8fdb92',
+					400: '#5fc25f',
+					500: '#38a53a',
+					600: '#2a862d',
+					700: '#246b26',
+					800: '#205522',
+					900: '#1c471e',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +97,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'leaf-sway': {
+					'0%, 100%': {
+						transform: 'rotate(-3deg)'
+					},
+					'50%': {
+						transform: 'rotate(3deg)'
+					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'leaf-sway': 'leaf-sway 5s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.5s ease-out forwards'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				display: ['"Playfair Display"', 'serif']
 			}
 		}
 	},
