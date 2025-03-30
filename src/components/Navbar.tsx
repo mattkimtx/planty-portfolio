@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from '@/hooks/use-mobile';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 const Navbar = () => {
   const isMobile = useIsMobile();
@@ -56,6 +57,10 @@ const Navbar = () => {
           <Leaf className="h-6 w-6 text-plant-500" />
           <span className="font-display text-xl font-medium">Portfolio</span>
         </div>
+        
+        <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
+          <ThemeToggle />
+        </div>
 
         {isMobile ? (
           <Sheet>
@@ -82,6 +87,9 @@ const Navbar = () => {
             <SheetContent side="right" className="w-[300px]">
               <div className="flex flex-col space-y-2 mt-8">
                 <NavLinks />
+                <div className="pt-4 flex justify-center">
+                  <ThemeToggle />
+                </div>
               </div>
             </SheetContent>
           </Sheet>

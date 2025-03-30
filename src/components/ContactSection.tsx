@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Sprout, Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Sprout, Mail, Github, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -86,7 +86,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="mr-3 h-5 w-5 text-plant-500" />
-                  <span>your.email@example.com</span>
+                  <a href="mailto:mattjkim.me@gmail.com" className="hover:text-plant-600 transition-colors">mattjkim.me@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -94,18 +94,24 @@ const ContactSection = () => {
             <div>
               <h3 className="text-2xl font-display font-medium mb-4">Social Media</h3>
               <div className="flex space-x-4">
-                <Button variant="outline" size="icon" className="rounded-full border-plant-200 hover:bg-plant-50">
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
-                </Button>
-                <Button variant="outline" size="icon" className="rounded-full border-plant-200 hover:bg-plant-50">
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Button>
-                <Button variant="outline" size="icon" className="rounded-full border-plant-200 hover:bg-plant-50">
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </Button>
+                <a href="https://github.com/mattkimtx" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="icon" className="rounded-full border-plant-200 hover:bg-plant-50 hover:border-plant-500 transition-colors">
+                    <Github className="h-5 w-5" />
+                    <span className="sr-only">GitHub</span>
+                  </Button>
+                </a>
+                <a href="https://www.linkedin.com/in/matthewkim25/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="icon" className="rounded-full border-plant-200 hover:bg-plant-50 hover:border-plant-500 transition-colors">
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">LinkedIn</span>
+                  </Button>
+                </a>
+                <a href="https://www.instagram.com/_math_u_/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="icon" className="rounded-full border-plant-200 hover:bg-plant-50 hover:border-plant-500 transition-colors">
+                    <Instagram className="h-5 w-5" />
+                    <span className="sr-only">Instagram</span>
+                  </Button>
+                </a>
               </div>
             </div>
             

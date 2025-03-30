@@ -53,21 +53,21 @@ const EducationSection = () => {
           <div className="h-1 w-20 bg-plant-300 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 mb-16">
+        <div className="max-w-3xl mx-auto mb-16">
           {educations.map((edu, index) => (
-            <Card key={index} className="plant-card h-full animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-              <CardHeader>
-                <CardTitle className="text-xl">{edu.degree}</CardTitle>
-                <CardDescription>{edu.institution}, {edu.location}</CardDescription>
-                <span className="text-sm text-muted-foreground bg-secondary px-3 py-1 rounded-full inline-block mt-2">
+            <Card key={index} className="plant-card h-full animate-fade-in-up shadow-md hover:shadow-lg transition-shadow duration-300" style={{ animationDelay: `${index * 100}ms` }}>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl text-plant-600">{edu.degree}</CardTitle>
+                <CardDescription className="text-base">{edu.institution}, {edu.location}</CardDescription>
+                <span className="text-sm text-muted-foreground bg-secondary/60 px-3 py-1 rounded-full inline-block mt-2 border border-secondary">
                   {edu.period}
                 </span>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-2">
                 <p className="mb-4 text-sm text-muted-foreground">{edu.description}</p>
-                <div className="space-y-1">
-                  <h4 className="text-sm font-medium">Coursework:</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground">
+                <div className="space-y-2">
+                  <h4 className="text-sm font-medium text-plant-500">Coursework:</h4>
+                  <ul className="list-disc list-outside ml-5 text-sm text-muted-foreground space-y-1">
                     {edu.achievements.map((achievement, idx) => (
                       <li key={idx}>{achievement}</li>
                     ))}
@@ -84,21 +84,21 @@ const EducationSection = () => {
           <div className="h-1 w-20 bg-plant-300 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="plant-card h-full animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-              <CardHeader>
-                <CardTitle className="text-xl">{project.name}</CardTitle>
-                <CardDescription>{project.role}</CardDescription>
-                <span className="text-sm text-muted-foreground bg-secondary px-3 py-1 rounded-full inline-block mt-2">
+            <Card key={index} className="plant-card h-full animate-fade-in-up shadow-md hover:shadow-lg transition-shadow duration-300" style={{ animationDelay: `${index * 100}ms` }}>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl text-plant-600">{project.name}</CardTitle>
+                <CardDescription className="text-base">{project.role}</CardDescription>
+                <span className="text-sm text-muted-foreground bg-secondary/60 px-3 py-1 rounded-full inline-block mt-2 border border-secondary">
                   {project.period}
                 </span>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-2">
                 <p className="mb-4 text-sm">{project.description}</p>
-                <div className="space-y-1">
-                  <h4 className="text-sm font-medium">Key Accomplishments:</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground">
+                <div className="space-y-2">
+                  <h4 className="text-sm font-medium text-plant-500">Key Accomplishments:</h4>
+                  <ul className="list-disc list-outside ml-5 text-sm text-muted-foreground space-y-1">
                     {project.achievements.map((achievement, idx) => (
                       <li key={idx}>{achievement}</li>
                     ))}

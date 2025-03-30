@@ -31,9 +31,11 @@ const HeroSection = () => {
               I build beautiful, responsive, and user-friendly applications with a focus on clean code and sustainable practices.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-plant-500 hover:bg-plant-600">
-                Contact Me
-              </Button>
+              <a href="mailto:mattjkim.me@gmail.com">
+                <Button className="bg-plant-500 hover:bg-plant-600">
+                  Contact Me
+                </Button>
+              </a>
               <a href="/Resume.pdf" download>
                 <Button variant="outline" className="border-plant-200 hover:bg-plant-50">
                   <Download className="mr-2 h-4 w-4" /> Download Resume
