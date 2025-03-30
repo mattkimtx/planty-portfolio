@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="order-2 md:order-1 animate-fade-in-up [animation-delay:200ms]">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-              Hello, I'm <span className="text-plant-500">Your Name</span>
+              Hello, I'm <span className="text-plant-500">Matthew Kim</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6">
               Software Engineer & Outdoor Enthusiast
@@ -43,7 +43,7 @@ const HeroSection = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-plant-100 to-plant-200 rounded-full overflow-hidden border-4 border-white shadow-lg">
               {/* Replace with your image */}
               <div className="absolute inset-0 flex items-center justify-center text-plant-500 font-medium text-lg">
-                Your Photo Here
+                Matthew's Photo Here
               </div>
             </div>
           </div>

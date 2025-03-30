@@ -16,14 +16,14 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg mb-6">
-              I'm a passionate software engineer with a love for creating elegant solutions to complex problems. 
+              I'm a passionate software engineer and double major in Computer Science and Chinese Language at Dartmouth College. 
               With a strong foundation in both front-end and back-end technologies, I enjoy building applications 
               that are not only functional but also intuitive and visually appealing.
             </p>
             
             <p className="text-lg mb-8">
-              When I'm not coding, you'll find me taking care of my growing collection of houseplants, 
-              hiking in nature, or experimenting with new recipes in the kitchen.
+              When I'm not coding, you'll find me fly fishing in New England's beautiful rivers, exploring nature,
+              or working on my next software project.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
@@ -48,10 +48,10 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-2 gap-6">
             {[
-              { title: "Frontend", skills: ["React", "TypeScript", "Tailwind CSS", "Next.js"] },
-              { title: "Backend", skills: ["Node.js", "Python", "Express", "PostgreSQL"] },
-              { title: "Tools", skills: ["Git", "Docker", "AWS", "CI/CD"] },
-              { title: "Soft Skills", skills: ["Communication", "Teamwork", "Problem Solving", "Adaptability"] }
+              { title: "Frontend", skills: ["React", "React Native", "TypeScript", "JavaScript", "HTML/CSS"] },
+              { title: "Backend", skills: ["Python", "Java", "C", "Node.js", "Django"] },
+              { title: "Databases", skills: ["SQL", "MongoDB", "Redis"] },
+              { title: "Tools", skills: ["Git", "Docker", "AWS", "Azure", "Google Cloud"] }
             ].map((category, index) => (
               <Card key={index} className="plant-card animate-fade-in-up [animation-delay:300ms]">
                 <CardContent className="p-6">

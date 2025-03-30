@@ -11,25 +11,25 @@ import {
 
 const experiences = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Innovators Inc.",
-    period: "Jan 2022 - Present",
-    description: "Led the development of a real-time analytics dashboard using React and Node.js. Improved system performance by 40% through code optimization and refactoring legacy systems.",
-    technologies: ["React", "TypeScript", "Node.js", "AWS", "GraphQL"]
+    title: "Lead Software Engineer",
+    company: "Feast",
+    period: "January 2025 - Current",
+    description: "Developed a React Native app and React web platform using TypeScript for Feast, a B2B employee benefit platform connecting companies with private chefs. Collaborated with the CTO to implement user feedback-driven improvements, including automated email workflows, calendar scheduling via Cloud Run Functions (GCP), and chef payment processing with Stripe APIs and Webhooks.",
+    technologies: ["React Native", "TypeScript", "React", "GCP", "Stripe API"]
   },
   {
-    title: "Software Engineer",
-    company: "Digital Solutions Ltd.",
-    period: "May 2019 - Dec 2021",
-    description: "Developed and maintained full-stack web applications for clients in the finance sector. Implemented responsive UIs and RESTful APIs serving thousands of users.",
-    technologies: ["JavaScript", "React", "Express", "MongoDB", "Docker"]
+    title: "Software Engineer Intern",
+    company: "Microsoft",
+    period: "June 2024 - August 2024",
+    description: "Automated investigation of services failing uptime SLAs by developing 3 Scala Spark pipelines on Azure Synapse, analyzing log data from 7 authentication services across 9 regions, and visualizing results in Power BI. Optimized local Spark project build time from 20 minutes to under 3 minutes.",
+    technologies: ["Scala", "Spark", "Azure Synapse", "Power BI"]
   },
   {
-    title: "Junior Developer",
-    company: "WebCraft Studio",
-    period: "Aug 2017 - Apr 2019",
-    description: "Created responsive websites and e-commerce solutions for small businesses. Collaborated with designers to implement pixel-perfect UIs and optimize user experiences.",
-    technologies: ["HTML/CSS", "JavaScript", "PHP", "WordPress", "MySQL"]
+    title: "Software Engineer Intern",
+    company: "Senao Networks",
+    period: "September 2023 - February 2024",
+    description: "Developed two full-stack web apps with Django and MongoDB for querying network packet data and managing firmware for routers, switches, and access points. Automated CI/CD with GitHub Actions and Docker, deploying to an Ubuntu EC2 server, improving efficiency.",
+    technologies: ["Django", "MongoDB", "GitHub Actions", "Docker", "AWS EC2"]
   }
 ];
 
