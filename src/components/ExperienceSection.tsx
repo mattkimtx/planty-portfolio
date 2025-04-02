@@ -35,7 +35,7 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-14">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <TreeDeciduous className="inline-block text-plant-500 mb-3" size={36} />

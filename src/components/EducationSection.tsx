@@ -45,7 +45,7 @@ const projects = [
 
 const EducationSection = () => {
   return (
-    <section id="education" className="py-20 bg-gradient-to-b from-background to-secondary/30">
+    <section id="education" className="py-14 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <TreePine className="inline-block text-plant-500 mb-3" size={36} />
